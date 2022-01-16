@@ -1,0 +1,17 @@
+
+#gameArea {background-color: rgb(216, 226, 223);
+  left:25%;width:50%;height:50%;top:10%;background:rgba(68, 3, 68, 0.705);position:absolute;text-align:center;
+  overflow: auto;
+  word-wrap: break-word
+  }
+.letterClass{
+  border: 1px solid gray;
+  
+  display: inline-block;
+  margin-right: 2px;
+  border: 10 px;
+  font-size: 14px;
+  color:bisque;
+  display: inline;
+  overflow: auto
+}
