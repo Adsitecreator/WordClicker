@@ -7,8 +7,13 @@ box.append(newDiv);
 newDiv.innerHTML = generateRandomLetter();  // Function returns a capital Leter 
 }
 
-
-
+window.addEventListener('click', function(event){  
+  let textObj =(event.target);
+  text = textObj.outerHTML
+  let result = (text.substr(25, 26));   // Converts letter clicked to a string
+  result = result[0]
+  console.log(result);
+});
 
 
 
