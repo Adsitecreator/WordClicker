@@ -1,8 +1,24 @@
+html,
+body {
+    height: 100%;
+}
+hr{
+  height: 5px;
+  background-color: #ccc;
+  border: none;
+  }
 
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #gameArea {background-color: rgb(216, 226, 223);
-  left:25%;width:50%;height:50%;top:10%;background:rgba(68, 3, 68, 0.705);position:absolute;text-align:center;
+  margin: 5%;
+  width:90%;height:70%;top:10%;background:rgba(68, 3, 68, 0.705);position:absolute;text-align:center;
   overflow: auto;
   word-wrap: break-word
   }
@@ -15,6 +31,15 @@
   border: 10 px;
   font-size: 24px;
   color:bisque;
+  display: inline;
+  overflow: auto
+}
+.answerClass{
+  /* border: 1px solid rgb(145, 119, 119); */
+  
+  
+  font-size: 30px;
+  color:rgb(255, 255, 255);
   display: inline;
   overflow: auto
 }
