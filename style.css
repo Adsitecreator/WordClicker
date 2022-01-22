@@ -1,7 +1,6 @@
 html,
-body {
-    height: 100%;
-}
+
+
 hr{
   height: 5px;
   background-color: #ccc;
@@ -34,12 +33,22 @@ hr{
   display: inline;
   overflow: auto
 }
+
+.questionClass{
+  /* border: 1px solid rgb(145, 119, 119); */   
+  font-size: 32px;
+  color:rgb(255, 255, 255);
+  display: inline;
+  overflow: auto}
 .answerClass{
-  /* border: 1px solid rgb(145, 119, 119); */
+  /* border: 1px solid rgb(145, 119, 119); */ 
   
-  
-  font-size: 30px;
+  font-size: 32px;
   color:rgb(255, 255, 255);
   display: inline;
   overflow: auto
+}
+
+.button{
+  font-size: 32px;
 }
