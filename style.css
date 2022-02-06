@@ -28,10 +28,12 @@ hr{
   margin-right: 8px;
   padding: 10 px;
   border: 10 px;
-  font-size: 24px;
+  font-size: 28px;
   color:bisque;
   display: inline;
-  overflow: auto
+  overflow: auto;
+  
+  font-family: "Times New Roman", Times, serif;
 }
 
 .questionClass{
