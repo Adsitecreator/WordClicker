@@ -82,7 +82,6 @@ var words = [{
   "definition": "______Fucker!"
 }]
 
-
 var randomElement = words[Math.floor(Math.random() * words.length)];  // code to get a random word & Definition
     console.log(words[0]["definition"])
     console.log(randomElement)
@@ -94,7 +93,7 @@ var randomElement = words[Math.floor(Math.random() * words.length)];  // code to
 
 
 
-
+function mainGame(){
 var newDiv = document.createElement('div');
 
 newDiv.setAttribute('class','questionClass')
@@ -103,7 +102,7 @@ box.append(newDiv);
 newDiv.innerHTML= (definition + " <hr>" )
 
 
-for (let i = 0; i < 100; i++) {   
+for (let i = 0; i < 75; i++) {   
 
 var newDiv = document.createElement('div');
 newDiv.setAttribute('class','letterClass')   // puts Letters on Screen
@@ -133,20 +132,27 @@ window.addEventListener('click', function(event){
   console.log(answer.slice(4));
   
   if (answer.slice(4) == word) { console.log("You win!")
+  winCondition()
 
-  window.alert("You Win!")
-    
+ 
   }
 }});
+}
 
 
 
+function winCondition (){
 
-
-
+  document.getElementById("gameArea").innerHTML = "You Win!<bR>";
+  var newBtn = document.createElement('button');
+      newBtn.innerHTML = ('Restart')      
+      var box = document.getElementById("gameArea");
+    box.append(newBtn);
+    $("button").click(mainGame);
+    }
 
 function generateRandomLetter() {
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + word  // makes sure the word is in the jumbe of letters
   
     return alphabet[Math.floor(Math.random() * alphabet.length)]
   }
@@ -160,6 +166,7 @@ function generateRandomLetter() {
     // newDiv.innerHTML +='<button id="deleteLetter" Delete>' // need to make a delete 
     // }
 
+    mainGame()
 
 
     
